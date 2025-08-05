@@ -1,10 +1,10 @@
-import css from "../styles/App.module.css";
-import CafeInfo from "../components/CafeInfo";
+import css from "./App.module.css";
+import CafeInfo from "../CafeInfo/CafeInfo";
 import { useState } from "react";
 import type { Votes, VoteType } from "../types/votes";
-import VoteOptions from "../components/VoteOptions";
-import VoteStats from "../components/VoteStats";
-import Notification from "../components/Notification";
+import VoteOptions from "../VoteOptions/VoteOptions";
+import VoteStats from "../VoteStats/VoteStats";
+import Notification from "../Notification/Notification";
 
 export default function App() {
   const [votes, setVotes] = useState<Votes>({ good: 0, neutral: 0, bad: 0 });
